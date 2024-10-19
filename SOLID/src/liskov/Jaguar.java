@@ -1,4 +1,4 @@
-package main;
+package liskov;
 
 public class Jaguar extends Animal implements IFelino{
 
