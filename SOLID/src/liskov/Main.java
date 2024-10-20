@@ -13,7 +13,7 @@ public class Main {
 		
 		yagua.rugir();
 		yagua.cazar();
-		yagua.maullar();
+		//yagua.maullar();
 		
 		Jaguar jaguar2= new Jaguar();
 		System.out.println(jaguar2);
@@ -23,6 +23,17 @@ public class Main {
 		
 		Jaguar jaguar4= new Jaguar(100f);
 		System.out.println(jaguar4);
+		
+		
+		//principio de Barbara Liskov
+		IFelino yagua2 = new Jaguar(5,70f);
+		yagua2.cazar();
+
+		IFelinoSalvaje yagua3 = new Jaguar(5,70f);
+		yagua3.cazar();
+		yagua3.rugir();
+		
+		  		 
 
 
 	}
